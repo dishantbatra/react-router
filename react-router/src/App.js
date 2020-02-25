@@ -3,14 +3,15 @@ import { Navigation } from "./navigation";
 import { Footer } from "./footer";
 import { Main } from "./main";
 import "./App.css";
+import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Fragment>
+    <Router>
       <Navigation></Navigation>
       <Main></Main>
       <Footer></Footer>
-    </Fragment>
+    </Router>
   );
 }
 
